@@ -9,11 +9,15 @@ from itertools import cycle
 client = commands.Bot(command_prefix = 'a!')
 
 @client.event
+await client.change_presence(status=discord.Status.Online, activity=discord.Game("~A_L_A_N~'S Discord bot (coded by ImLazyWithAZ#8327 "))
 async def on_ready():
   print('Bot is ready')
   
 @client.command()
 async def start(ctx):
-  await ctx.send('This bot has been staerted')
+  await ctx.send('This bot has been started')
 
+@client.command()
+async def 
+  
 client.run(os.getenv('TOKEN'))
