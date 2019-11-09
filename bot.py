@@ -14,6 +14,6 @@ async def on_ready():
   
 @client.command()
 async def start(ctx):
-  ctx.send('This bot has been staerted')
+  await ctx.send('This bot has been staerted')
 
 client.run(os.getenv('TOKEN'))
