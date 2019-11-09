@@ -21,4 +21,9 @@ async def start(ctx):
 async def hi(ctx):
   await ctx.send(f'Hello {ctx.author}!')
   
+@client.command()
+async def presence(ctx, *, status):
+    await bot.change_presence(status=discord.Status.online, activity=discord.Game(status))
+    await ctx.send("Status Changed!")
+  
 client.run(os.getenv('TOKEN'))
