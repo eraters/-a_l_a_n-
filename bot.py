@@ -22,7 +22,7 @@ async def hi(ctx):
   
 @client.command()
 async def presence(ctx, *, status):
-    await bot.change_presence(status=discord.Status.online, activity=discord.Game(status))
+    await client.change_presence(status=discord.Status.online, activity=discord.Game(status))
     await ctx.send("Status Changed!")
   
 client.run(os.getenv('TOKEN'))
