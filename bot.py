@@ -11,7 +11,7 @@ client = commands.Bot(command_prefix = 'a!')
 @client.event
 async def on_ready():
   print('Bot is ready')
-  await client.change_presence(status=discord.Status.Away, activity=discord.Game("~A_L_A_N~'S Discord bot (coded by ImLazyWithAZ#8327 "))
+  await client.change_presence(status=discord.Status.away, activity=discord.Game("~A_L_A_N~'S Discord bot (coded by ImLazyWithAZ#8327 "))
 
 @client.command()
 async def start(ctx):
